@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link href="/css/globals.css" rel="stylesheet">
+</head>
+<body>
+    <div class="header" th:fragment="bodyHeader">
+        <nav class="navbar">
+            <div class="homebtn_div">
+                <button class="likelionlogo_btn" onclick="location.href='/'">
+                    <img src="../../img/kau_likelion.png" alt="logo" class="kau_likelion_logo">
+                    HOME
+                </button>
+            </div>
+
+            <div class="navbar_title_txt">
+                <a class="likelion_title">LIKELION</a>
+                <p class="kau_title">KoreaAerospaceUniversity</p>
+            </div>
+
+            <div class="assignment_nav">
+                <button class="homework_btn" onclick="location.href='/list'">
+                    <div><img src="../../img/backpack.png" alt="backpack" class="assignment_backpack"></div>
+                    <div class="homework_list">목록</div>
+                </button>
+            </div>
+        </nav>
+    </div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+@import "mainStyle.css";
+
+.navbar{
+    background-color: var(--color-main-black);
+    display: flex;
+}
+.kau_likelion_logo{
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+}
+.likelionlogo_btn {
+    width: 60px;
+    height: 60px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-family: "GmarketSansMedium";
+    color:var(--color-orange-main);
+    font-size: 12px;
+}
+.homebtn_div{
+    width: 50px;
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
+    margin-right: 0px;
+    margin-left: auto;
+}
+.likelion_title{
+    font-family: "GmarketSansMedium";
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 30px;
+}
+.kau_title{
+    font-family: "GmarketSansMedium";
+    color: #ffffff;
+    font-weight: lighter;
+    font-size: 15px;
+    margin-top: 0px;
+}
+.homework_btn{
+    width: 46px;
+    height: 46px;
+    background-color: var(--color-main-black);
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    justify-content: center;
+    padding: 0px;
+}
+.assignment_backpack{
+    width: 40px;
+    height: 40px;
+    margin-bottom: 6px;
+}
+.homework_list{
+    font-family: "GmarketSansMedium";
+    color: #ffffff;
+    font-size: 12px;
+    text-decoration: none; /* 밑줄 삭제 */
+    justify-content: center;
+}
+.assignment_nav{
+    width: 50px;
+    display: block;
+    flex-direction: column; /* 세로 정렬 */
+    justify-content: center;
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: 0px;
+}
+.navbar_title_txt{
+    display: block;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 20px;
+    margin: auto;
+}

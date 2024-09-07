@@ -1,0 +1,53 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/header :: header}"></head>
+<body>
+    <div th:replace="~{fragments/bodyHeader :: bodyHeader}"></div>
+    <div class="all">
+        <div class="assignment_title_div">
+            <img src="../../img/book-btn.png" alt="book_btn" class="book_btn">
+            <h3 class="assignment_title">과제 제출</h3>
+        </div>
+        <div class="assignment_box">
+            <div class="assignment_txt_div">
+                <div class="title">
+                    <p class="assignment_category">과제 : JAVA</p>
+
+                </div>
+                <div class="line">
+                    <p class="assignment_goal">class 속성을 이용해서 은행계좌 만들기</p>
+                    <p class="assignment_deadline_date">3월 27일 월요일</p>
+                    <p class="assignment_deadline_time">19:00</p>
+                </div>
+            </div>
+            <div class="assignment_sub_div">
+                <p class="assignment_subtitle">과제 내용 확인하기</p>
+                <div class="assignment_check_box" style="overflow: auto">
+                    <h5>[기능 구현 예시]</h5>
+                    <h6>은행계좌를 처음부터 만들려면 시작부터 막힐 수 있으니, 막힐 때마다 다음의 토글을 열어 진행 방향을 설정하고 열심히 코딩해보세요!! 막히는 건 자연스러운 겁니다!! 검색도 해보고 운영진에게 문의도 하여 열심히 코딩해주세요 😊</h6>
+                    <h5>[메뉴 선택 기능 만들기]</h5>
+                    <h6>메뉴에는 기본적으로 5가지 기능이 들어갑니다! 계좌개설, 입금하기, 출금하기, 전체조회, 프로그램 종료 메뉴를 등록해주세요.</h6>
+                </div>
+            </div>
+            <div class="assignment_sub_div">
+                <p class="assignment_subtitle">과제 제출하기</p>
+                <div id="fileContainer">
+                    <div class="file_box">
+                        <p class="file_name">Java세션_은행계좌만들기_1.java</p>
+                    </div>
+                </div>
+            </div>
+            <div class="file_add_div">
+                <img src="../../img/clip.png" alt="file_clip" class="file_clip">
+                <div class="file_add_div">
+                    <input type="file" id="fileInput">
+                    <button onclick="uploadFile()">파일 추가하기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div th:replace="~{fragments/footer :: footer}"></div>
+    <script src="../../js/fileUpload.js"></script>
+</body>
+
+</html>

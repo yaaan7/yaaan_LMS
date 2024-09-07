@@ -1,0 +1,69 @@
+@import "mainStyle.css";
+
+.all{
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.homework_title_box{
+    margin: 50px auto;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-family: "Noto Sans KR";
+    color: white;
+    background-color: var(--color-orange-main);
+}
+
+.homework_list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.homework_list_img{
+    width: 35px;
+    height: 35px;
+}
+
+.homework_list_name{
+    font-family: "GmarketSansMedium";
+    font-size: 20px;
+    color: var(--color-main-black);
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+
+.homework_content_box{
+    width: 620px;
+    height: 100px;
+    border-radius: 8px;
+    border: 1px solid #d9d9d9;
+    margin: 50px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.homework_content_box_1{
+    font-family: "Noto Sans KR";
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.homework_content_box_2{
+    font-family: "Noto Sans KR";
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.homework_content_box_3{
+    font-family: "Noto Sans KR";
+    font-weight: bold;
+    font-size: 15px;
+    color: var(--color-orange-main);
+}
