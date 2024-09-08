@@ -17,19 +17,20 @@
         <button class="sort_btn" onclick="sortBy('createdDate')">등록 시간순 정렬</button>
         <button class="sort_btn" onclick="sortBy('dueDate')">마감 시간순 정렬</button>
     </div>
-
-    <div class="homework_content">
-        <div th:each="homework : ${homeworkList}" class="homework_content_box">
-            <div class="homework_content_box_1">
-                [과제 : <span th:text="${homework.cate}">과제 유형</span>]
+    <div class="homework_content" th:each="homework : ${homeworkList}">
+        <a th:href="@{/homework/{id}(id=${homework.id})}" class="homework_list_link">
+            <div class="homework_content_box">
+                <div class="homework_content_box_1">
+                    [과제 : <span th:text="${homework.cate}">과제 유형</span>]
+                </div>
+                <div class="homework_content_box_2" th:text="${homework.title}">
+                    과제 제목
+                </div>
+                <div class="homework_content_box_3">
+                    마감 시간: <span th:text="${#temporals.format(homework.dueDate, 'yyyy-MM-dd HH:mm')}"></span>
+                </div>
             </div>
-            <div class="homework_content_box_2" th:text="${homework.title}">
-                과제 제목
-            </div>
-            <div class="homework_content_box_3">
-                마감 시간: <span th:text="${#temporals.format(homework.dueDate, 'yyyy-MM-dd HH:mm')}"></span>
-            </div>
-        </div>
+        </a>
     </div>
     <div th:replace="~{fragments/paging :: paging}"></div>
 </div>

@@ -10,7 +10,7 @@ public class LoginController {
     // 운영진 로그인 (예시)
     @GetMapping("/login/admin")
     public String adminLogin(HttpSession session) {
-        Long userId = 1L;
+        long userId = 1;
         boolean isAdmin = true;
 
         // 세션에 정보 저장
@@ -24,7 +24,7 @@ public class LoginController {
     @GetMapping("/login/baby")
     public String babyLogin(HttpSession session) {
 
-        Long userId = 2L;
+        long userId = 2;
         boolean isAdmin = false;
 
         // 세션에 정보 저장

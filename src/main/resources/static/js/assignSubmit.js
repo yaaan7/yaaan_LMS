@@ -10,22 +10,6 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
-function loadAssignmentData(assignmentId) {
-    fetch(`/api/assignments/${assignmentId}`)
-        .then(response => response.json())
-        .then(data => {
-            document.getElementById('assignment_cate').value = data.cate;
-            document.getElementById('assignment_title').value = data.title;
-            document.getElementById('assignment_description').value = data.description;
-            document.getElementById('assignment_due_date').value = data.dueDate;
-            document.getElementById('assignment_due_time').value = data.dueTime;
-        })
-        .catch(error => {
-            console.error('Error fetching assignment data:', error);
-            alert('과제 데이터를 불러오는데 실패했습니다.');
-        });
-}
-
 function submitAssignment() {
     const cate = document.getElementById('assignment_cate').value;
     const title = document.getElementById('assignment_title').value;
@@ -66,6 +50,7 @@ function submitAssignment() {
         })
         .then(data => {
             alert(isEditMode ? '과제가 성공적으로 수정되었습니다.' : '과제가 성공적으로 부여되었습니다.');
+            window.location.href = '/list/1';
         })
         .catch(error => {
             console.error('Error:', error);

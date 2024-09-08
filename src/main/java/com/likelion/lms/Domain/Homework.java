@@ -4,9 +4,11 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Entity
 @Table(name = "homework")
@@ -29,4 +31,7 @@ public class Homework {
     private LocalDate dueDate;
     @Column(nullable = false)
     private String dueTime;
+    @OneToMany(mappedBy = "homework", cascade = CascadeType.ALL)
+    @ToString.Exclude
+    private List<UserHomework> userHomeworks;
 }

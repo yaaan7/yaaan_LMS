@@ -8,5 +8,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface HomeworkRepository extends JpaRepository<Homework, Long> {
+
     Page<Homework> findAll(Pageable pageable);
 }
