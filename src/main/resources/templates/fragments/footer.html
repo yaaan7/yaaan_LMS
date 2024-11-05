@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html lang="" xmlns:th="http://www.thymeleaf.org">
-<div class="footerbar"  th:fragment="footer">
-    <div class="footer_txt_div">
-        <p class="footer_title">ABOUT</p>
-        <div class="footer_menus">
-            <a class="managers" href="/credit">12th manager</a>
-            <a class="KAU_likelion" href="/about">KAU likelion</a>
-            <a class="Likelion_univ" href="/">Likelion Univ</a>
+<head>
+    <meta charset="utf-8">
+    <link href="/css/footer.css" rel="stylesheet">
+</head>
+<body>
+<footer>
+    <div class="footerbar" th:fragment="footer">
+        <div class="footer_txt_div">
+            <p class="footer_title">ABOUT</p>
+            <div class="footer_menus">
+                <a class="managers" href="/credit">12th manager</a>
+                <a class="KAU_likelion" href="/about">KAU likelion</a>
+                <a class="Likelion_univ" href="/">Likelion Univ</a>
+            </div>
         </div>
     </div>
-</div>
+</footer>
+</body>
 </html>

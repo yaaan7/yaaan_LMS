@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
+    <meta charset="utf-8">
     <link href="/css/globals.css" rel="stylesheet">
     <script src="https://cdn.ckeditor.com/ckeditor5/36.0.1/classic/ckeditor.js"></script>
 </head>
@@ -9,7 +10,7 @@
         <nav class="navbar">
             <div class="homebtn_div">
                 <button class="likelionlogo_btn" onclick="location.href='/'">
-                    <img src="../../img/kau_likelion.png" alt="logo" class="kau_likelion_logo">
+                    <img src="/static/img/kau_likelion.png" alt="logo" class="kau_likelion_logo">
                     HOME
                 </button>
             </div>
@@ -21,11 +22,12 @@
 
             <div class="assignment_nav">
                 <button class="homework_btn" onclick="location.href='/list/1'">
-                    <div><img src="../../img/backpack.png" alt="backpack" class="assignment_backpack"></div>
+                    <div><img src="/static/img/backpack.png" alt="backpack" class="assignment_backpack"></div>
                     <div class="homework_list">목록</div>
                 </button>
             </div>
         </nav>
     </div>
+
 </body>
 </html>

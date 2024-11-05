@@ -1,10 +1,10 @@
-@import "homwork.css";
-@import "homework_list.css";
-@import "mainStyle.css";
-@import "navbar.css";
-@import "footer.css";
-@import "login.css";
-@import "paging.css";
+@import "css/homework.css";
+@import "css/homework_list.css";
+@import "css/mainStyle.css";
+@import "css/navbar.css";
+@import "css/footer.css";
+@import "css/login.css";
+@import "css/paging.css";
 
 body{
     margin: 0px;

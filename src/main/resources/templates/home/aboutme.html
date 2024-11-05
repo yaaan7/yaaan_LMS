@@ -1,6 +1,8 @@
 <!doctype html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head th:replace="~{fragments/header :: header}"></head>
+<head th:replace="~{fragments/header :: header}">
+    <meta charset="utf-8">
+    </head>
 <body>
 <div th:replace="~{fragments/bodyHeader :: bodyHeader}"></div>
 <div class="about_me_div">
@@ -11,8 +13,8 @@
     <hr>
     <div class="about_me_content">
         <div class="about_img_div">
-            <img src="../../img/eltanin1.png" alt="사진 1">
-            <img src="../../img/eltanin2.png" alt="사진 2">
+            <img src="/static/img/eltanin1.png" alt="사진 1">
+            <img src="/static/img/eltanin2.png" alt="사진 2">
         </div>
         <div class="about_me_content_text">
             저의 닉네임은 용자리 감마별로부터 유래 되었습니다!<br>개인적으로 좋아하는 별이라서 이 별의 이름에서 닉네임을 정하게 되었습니다.

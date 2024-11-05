@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/static/css/home.css">
+    <title>Welcome</title>
+</head>
+<body>
+<div class="WelcomeTitle">
+    <p class="Welcome">Welcome!!</p>
+    <p class="This">This is LikeLion LMS Page.</p>
+</div>
+<div class="container">
+    <div class="arrow" id="toggle-button">
+        <img src="/static/img/Arrow.png" width="50" alt="Arrow">
+    </div>
+    <form action="http://localhost:8080/login" method="post">
+        <div class="login-box" id="login-box">
+            <p class="login">Login</p>
+            <input type="text" name="username" placeholder="Username" required>
+            //폼이 제출될 때 "username"이라는 키에 해당하는 값으로 전송
+            <input type="password" name="password" placeholder="Password" required>
+
+            <div class="toggle-login">
+                <select name="userType" required>
+                    <option value="admin">운영진</option>
+                    <option value="baby">일반 유저</option>
+                </select>
+            </div>
+            <button type="submit" id="login-button">Login</button>
+        </div>
+    </form>
+</div>
+    <script src="/static/js/login.js"></script>
+</body>
+</html>

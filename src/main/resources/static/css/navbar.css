@@ -1,4 +1,4 @@
-@import "mainStyle.css";
+@import "css/mainStyle.css";
 
 .navbar{
     background-color: var(--color-main-black);

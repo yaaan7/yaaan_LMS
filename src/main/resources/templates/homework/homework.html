@@ -1,11 +1,14 @@
 <!doctype html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head th:replace="~{fragments/header :: header}"></head>
+<head th:replace="~{fragments/header :: header}">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/homework.css">
+</head>
 <body>
 <div th:replace="~{fragments/bodyHeader :: bodyHeader}"></div>
 <div class="all">
     <div class="assignment_title_div">
-        <img src="../../img/book-btn.png" alt="book_btn" class="book_btn">
+        <img src="/static/img/book-btn.png" alt="book_btn" class="book_btn">
         <h3 class="assignment_title" th:text="'과제 제출 - ' + ${homework.title}"></h3>
     </div>
     <div class="assignment_box">
@@ -41,7 +44,7 @@
             </div>
         </div>
         <div class="file_add_div">
-            <img src="../../img/file-clip.png" alt="file_clip" class="file_clip">
+            <img src="/static/img/file-clip.png" alt="file_clip" class="file_clip">
             <div class="file_add_div">
                 <input type="file" id="fileInput">
                 <button th:attr="onclick='uploadFile(' + ${homework.id} + ')'">파일 추가하기</button>

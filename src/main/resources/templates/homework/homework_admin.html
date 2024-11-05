@@ -1,11 +1,14 @@
 <!doctype html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head th:replace="~{fragments/header :: header}"></head>
+<head th:replace="~{fragments/header :: header}">
+    <meta charset="utf-8">
+</head>
+
 <body>
 <div th:replace="~{fragments/bodyHeader :: bodyHeader}"></div>
 <div class="all">
     <div class="assignment_title_div">
-        <img src="../../img/book-btn.png" alt="book_btn" class="book_btn">
+        <img src="/static/img/book-btn.png" alt="book_btn" class="book_btn">
         <h3 class="assignment_title" th:text="'과제 제출 - ' + ${homework.title}"></h3>
     </div>
     <button class="new_homework_btn" th:onclick="|location.href='/homework/edit/' + ${homework.id}|">과제 수정하기</button>
@@ -42,7 +45,7 @@
     </div>
 </div>
 <div th:replace="~{fragments/footer :: footer}"></div>
-<script src="../../js/fileUpload.js"></script>
+<script src="/static/js/fileUpload.js"></script>
 </body>
 
 </html>
