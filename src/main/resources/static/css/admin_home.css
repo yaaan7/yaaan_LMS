@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'DungGeunMo';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+p{
+    font-family:  'DungGeunMo', serif;
+    margin:0;
+}
+
+button {
+
+}
+
+.all{
+    width : 100%;
+    background-color: #ffbe3c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 100vh;
+}
+.all img{
+    position: absolute;
+    top: 10px;
+    left: 10px
+}
+.page_title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px; /* 제목과 버튼 사이 간격 */
+}
+
+.page_title_txt {
+    margin-top: 250px;
+    font-size: 80px;
+    font-weight: bold;
+    color: #FFF2D9;
+}
+
+
+.button {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.button button {
+    flex: 1;
+    margin: 0 10px; /* 버튼 간의 간격을 일정하게 설정 */
+    padding: 10px;
+    font-size: 20px;
+    font-family:  'DungGeunMo', serif;
+    font-weight: bold;
+    color: #FFF2D9;
+    border: 2.5px solid #FFF2D9;
+    background-color: #ffbe3c;
+    transition: transform 0.1s ease, box-shadow 0.1s ease; /* 애니메이션 추가 */
+}
+
+.button button:active {
+    transform: scale(0.95); /* 살짝 눌리는 효과 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2) inset; /* 안쪽으로 들어간 그림자 효과 */
+    background-color: #e0e0e0; /* 눌렀을 때 배경색 변경 */
+}
+
+.button button:first-child {
+    margin-left: 20px;
+}
+
+.button button:last-child {
+    margin-right: 20px;
+}
