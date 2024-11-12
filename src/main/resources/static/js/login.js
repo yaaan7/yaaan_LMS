@@ -27,13 +27,4 @@ document.addEventListener('DOMContentLoaded', function() {
     loginBox.style.display = 'block'; // 기본적으로 보여주기
 });
 
-loginButton.addEventListener('click', function() {
-    const username = document.getElementById('username').value;
-    const password = document.getElementById('password').value;
 
-    if (username === 'admin' && password === 'admin') {
-        window.location.href = 'admin_home.html'; // 페이지 리다이렉트
-    } else {
-        alert('로그인 실패: 잘못된 사용자 이름 또는 비밀번호입니다.'); // 오류 메시지
-    }
-});

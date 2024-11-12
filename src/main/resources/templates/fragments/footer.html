@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="utf-8">
-    <link href="/css/footer.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/static/css/footerbar.css">
 </head>
 <body>
 <footer>
-    <div class="footerbar" th:fragment="footer">
+    <div class="footerbar" th:replace="~{fragments/footer :: footer}">
         <div class="footer_txt_div">
             <p class="footer_title">ABOUT</p>
             <div class="footer_menus">

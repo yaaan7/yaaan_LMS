@@ -133,3 +133,55 @@ button:hover {
 .login-box:hover {
     right: 0;
 }
+
+@media screen and (max-width: 720px) {
+
+    .WelcomeTitle{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 300px;
+    }
+
+    .Welcome {
+        font-size: 80px;
+        color: #FFF2D9;
+    }
+
+    .This {
+        font-size: 20px;
+        color: #FFF2D9;
+        margin-left: 10px;
+        margin-bottom: 0;
+        font-weight: 500;
+    }
+
+    .container {
+        width: 100%;
+        height: 300px;
+    }
+
+    .login-box {
+        position: absolute;
+        bottom: 0; /* 화면 아래로 숨김 */
+        left: 0;
+        top: 80%;
+        transform: translateX(0%) translateY(0%);
+        width: 100%;
+
+        padding-top: 0;
+        padding-left: 85px;
+        display:flex;
+        flex-direction: column;
+        align-content: center;
+
+        color: #FFBE3C;
+        background-color: #FFF2D9;
+
+    }
+
+    .arrow{
+        opacity: 0;
+    }
+
+}

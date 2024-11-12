@@ -26,13 +26,14 @@ button {
 .all img{
     position: absolute;
     top: 10px;
-    left: 10px
+    left: 10px;
+    margin: 20px;
 }
 .page_title {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 40px; /* 제목과 버튼 사이 간격 */
+    margin-bottom: 40px;
 }
 
 .page_title_txt {
@@ -51,7 +52,7 @@ button {
 
 .button button {
     flex: 1;
-    margin: 0 10px; /* 버튼 간의 간격을 일정하게 설정 */
+    margin: 0 10px;
     padding: 10px;
     font-size: 20px;
     font-family:  'DungGeunMo', serif;
@@ -59,13 +60,13 @@ button {
     color: #FFF2D9;
     border: 2.5px solid #FFF2D9;
     background-color: #ffbe3c;
-    transition: transform 0.1s ease, box-shadow 0.1s ease; /* 애니메이션 추가 */
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
 }
 
 .button button:active {
-    transform: scale(0.95); /* 살짝 눌리는 효과 */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2) inset; /* 안쪽으로 들어간 그림자 효과 */
-    background-color: #e0e0e0; /* 눌렀을 때 배경색 변경 */
+    transform: scale(0.95);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2) inset;
+    background-color: #e0e0e0;
 }
 
 .button button:first-child {
@@ -74,4 +75,35 @@ button {
 
 .button button:last-child {
     margin-right: 20px;
+}
+
+@media screen and (max-width: 720px) {
+    .home{
+        width: 40px;
+        height: 40px;
+    }
+    .page_title_txt{
+        font-size: 40px;
+    }
+
+    .button button:first-child {
+        margin-left: 0;
+    }
+
+    .button button:last-child {
+        margin-right: 0;
+    }
+
+    .button {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
+
+     .button button{
+         margin: 0;
+     }
+
 }

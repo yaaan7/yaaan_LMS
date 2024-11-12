@@ -3,23 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="/static/css/admin_home.css">
+  <!-- Thymeleaf를 사용할 때 @{}를 사용하여 경로를 처리 -->
+  <link rel="stylesheet" type="text/css" th:href="@{/css/admin_home.css}">
   <title>Admin_Home</title>
 </head>
 <body>
 <div class="all">
-  <img src="/img/home.png" width="50" alt="HOME">
+  <!-- 링크에도 Thymeleaf를 사용하여 경로 처리 -->
+  <a th:href="@{/home.html}">
+    <img class="home" th:src="@{/img/home.png}" width="50" alt="HOME">
+  </a>
   <div class="page_title">
     <p class="page_title_txt">Admin_page</p>
   </div>
   <div class="button">
-    <button type="button" onclick="location.href='/homework/homework_admin.html'">Assignment</button>
-    <button type="button" >Student_list</button>
+    <!-- button 클릭 시 링크로 이동하는 부분도 Thymeleaf를 사용하여 경로 처리 -->
+    <button type="button" th:onclick="|location.href='@{/homework/write.html}'|">Assignment</button>
+    <button type="button" th:onclick="|location.href='@{/homework/homework_list.html}'|">homework_list</button>
     <button type="button">etc..</button>
   </div>
-
 </div>
 
+<!-- JS 파일도 Thymeleaf 경로로 수정 -->
+<script th:src="@{/js/login.js}"></script>
 </body>
-<script src="/js/login.js"></script>
 </html>

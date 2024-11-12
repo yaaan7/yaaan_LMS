@@ -1,10 +1,7 @@
 package com.likelion.lms.Domain;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
+import lombok.*;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -34,4 +31,13 @@ public class Homework {
     @OneToMany(mappedBy = "homework", cascade = CascadeType.ALL)
     @ToString.Exclude
     private List<UserHomework> userHomeworks;
+
+    // 파일 경로를 반환하는 메서드
+    // 파일 경로를 설정하는 메서드
+    @Getter
+    @Setter
+    private String filePath;  // 파일 경로 저장을 위한 변수
+
+    // 기존의 다른 필드들...
+
 }

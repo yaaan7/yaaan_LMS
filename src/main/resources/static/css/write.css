@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'DungGeunMo';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h3 {
+    font-family: 'DungGeunMo', serif;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    background-color: #ffbe3c;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+.all {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 35%;
+    position: fixed;
+    top: 10%;
+}
+
+.home{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    margin: 15px;
+}
+
+.button, .submit_btn {
+    font-family: 'DungGeunMo', serif;
+    margin: 0 10px;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #FFF2D9;
+    border: 2.5px solid #FFF2D9;
+    background-color: #ffbe3c;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.button:active, .submit_btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2) inset;
+    background-color: #e0e0e0;
+}
+
+.file-input {
+    position: absolute;
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    z-index: -1;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+label {
+    font-family: 'DungGeunMo', serif;
+    font-weight: lighter;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    padding: 5px;
+    font-family: 'DungGeunMo', serif;
+    font-weight: normal;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: auto;
+    min-height: 100px;
+}
+
+.assignment_input {
+    margin-top: 5px;
+}
+
+.assignment_title {
+    font-size: 35px;
+    color: #FFF2D9;
+    text-shadow:
+            1px 1px 0 black,
+            -1px -1px 0 black,
+            1px -1px 0 black,
+            -1px 1px 0 black;
+    margin-bottom: 15px;
+}
+
+.assignment_box {
+    background-color: #FFF2D9;
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+}
+.assignment_sub_div{
+    margin-top: 30px;
+}
+

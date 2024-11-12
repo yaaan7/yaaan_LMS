@@ -1,4 +1,4 @@
-package com.javabom.config;
+/*package com.javabom.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.CacheControl;
@@ -14,6 +14,5 @@ public class CustomWebMvcConfig implements WebMvcConfigurer {
         registry.addResourceHandler("/**")
                 .addResourceLocations("classpath:/static/");
                 //.setCacheControl(CacheControl.maxAge(10, TimeUnit.MINUTES));
-    }
-}
+}*/
 

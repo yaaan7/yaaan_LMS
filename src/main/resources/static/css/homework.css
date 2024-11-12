@@ -1,4 +1,4 @@
-@import "css/mainStyle.css";
+@import "./mainStyle.css";
 
 .all{
     justify-content: center;
@@ -10,7 +10,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin: 0 auto; /* 상하 좌우 가운데 정렬 */
+    margin: 0 auto;
     padding-top: 20px;
 }
 
